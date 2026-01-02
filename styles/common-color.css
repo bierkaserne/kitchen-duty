@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --font-mono: "Space Mono";
+    --font-pop: "Poppins";
+
+    --main-color: #69e1bb;
+    --secondary-color: #ff6680;
+    --text-input-highlight: #66afe9;
+
+
+    --background-color: white;
+    --text-color-con: white;
+    --white: white;
+    --text-color-main: #798693;
+
+    /* Mostly used for back ground shadows */
+    --black-transparent: rgba(0,0,0,0.3);
+    --neon-background: rgba(0,0,0,0.2);
+    --error-red: #ff0099; /*#d24242*/
+    /* Only used for Calendar as contrast */
+    --light-gray: #eaeef3;
+
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #232323;
+        --white: #232323;
+        --text-color-con: #232323;
+        --text-color-main: white;
+
+        --black-transparent: rgba(222, 217, 217, 0.2);
+        --neon-background: rgba(222, 217, 217, 0.2);
+        --light-gray: #656770;
+
+    }
+}
+
+.main-color {
+    color: var(--main-color) !important;
+}
+.neon-text {
+    text-shadow: var(--neon-background) 0 0 10px;
+}
+.main-color-wrapper:nth-child(odd) .main-color {
+    color: var(--secondary-color) !important;
+}
+.main-color-border {
+    border-color: var(--main-color) !important;
+}
+.main-color-wrapper:nth-child(odd) .main-color-border {
+    border-color: var(--secondary-color) !important;
+}
+.main-color-link {
+    text-decoration-color: var(--main-color) !important;
+}
+.main-color-wrapper:nth-child(odd) .main-color-link {
+    text-decoration-color: var(--secondary-color) !important;
+}
+.main-color-hover:hover {
+    color: var(--main-color) !important;
+}
+.main-color-wrapper:nth-child(odd) .main-color-hover:hover {
+    color: var(--secondary-color) !important;
+}
+.main-color-hover-border:hover {
+    border-color: var(--main-color) !important;
+}
+.main-color-wrapper:nth-child(odd) .main-color-hover-border:hover {
+    border-color: var(--secondary-color) !important;
+}
+.main-color-highlight {
+    border-color: var(--main-color) !important;
+}
+.main-color-wrapper:nth-child(odd) .main-color-highlight {
+    border-color: var(--secondary-color) !important;
+}
+
